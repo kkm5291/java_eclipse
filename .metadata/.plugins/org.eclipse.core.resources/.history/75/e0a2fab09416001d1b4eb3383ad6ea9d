@@ -1,0 +1,22 @@
+package Chapter8;
+import java.util.*;
+import java.io.*;
+public class practice_11 {
+	public static void main(String[] args) {
+		Vector<String> word = new Vector<String>();
+		Scanner sc;
+		File f = new File("C:\\Users\\kkm23\\Desktop\\R\\words");
+		try {
+			FileReader fr = new FileReader(f);
+			sc = new Scanner(fr);
+			for(int i=0; i<f.length(); i++) {
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+		
+		
+	}
+}

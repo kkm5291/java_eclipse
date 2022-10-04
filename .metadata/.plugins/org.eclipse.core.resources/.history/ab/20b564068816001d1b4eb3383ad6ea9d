@@ -1,0 +1,9 @@
+package Chapter8;
+import java.io.*;
+public class practice_8 {
+	public static void main(String[] args) {
+		File f = new File("C:\\");
+		File[] subFiles = f.listFiles();
+		System.out.println(subFiles);
+	}
+}

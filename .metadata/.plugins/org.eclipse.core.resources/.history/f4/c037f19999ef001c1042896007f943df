@@ -1,0 +1,21 @@
+
+public class Car {
+	
+	String name;
+	Wheel w;
+	
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Car(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+	
+	
+
+}

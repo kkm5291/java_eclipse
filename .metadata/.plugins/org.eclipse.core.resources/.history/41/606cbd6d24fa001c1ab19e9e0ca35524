@@ -1,0 +1,11 @@
+package BaekJoon;
+import java.util.Scanner;
+public class Main{
+   public static void main(String[] args) {
+	   int x;
+	   int y = 543;
+	   Scanner sc = new Scanner(System.in);
+	   x = sc.nextInt();
+	   System.out.println(x-y);
+   }
+}

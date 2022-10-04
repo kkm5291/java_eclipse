@@ -1,0 +1,16 @@
+package e.io.practice;
+import java.io.*;
+public class FileSizeSummary {
+	
+	public static void main(String[] args) {
+		FileSizeSummary sample = new FileSizeSummary();
+		String path = "C:\\Users\\kkm23\\Desktop\\text";
+		long sum = sample.printFileSize(path);
+		System.out.println(path + "'s total size = " + sum);
+	}
+	
+	public long printFileSize(String dirName) {
+		File file = new File(dirName);
+		return file.length();
+	}
+}

@@ -1,0 +1,27 @@
+package Chapter8;
+import java.util.*;
+import java.io.*;
+public class practice_11 {
+	public static void main(String[] args) {
+		Vector<String> word = new Vector<String>();
+		Scanner sc;
+		File f = new File("C:\\Users\\kkm23\\Desktop\\R\\words.txt");
+		try {
+			FileReader fr = new FileReader("C:\\Users\\kkm23\\Desktop\\R\\words.txt");
+			sc = new Scanner(fr);
+			while(sc.hasNext()) {
+				String en = sc.next();
+				word.add(en);
+			}
+			System.out.println(f.getPath() + "폴더 의" + f.getName() + "파일을 읽었습니다..");
+			sc.close();
+			sc = new Scanner(System.in);
+			
+			
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+		
+		
+	}
+}

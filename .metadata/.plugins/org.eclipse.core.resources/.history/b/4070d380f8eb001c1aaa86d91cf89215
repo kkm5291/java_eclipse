@@ -1,0 +1,21 @@
+
+public class Practice {
+	String delimeter = "----";
+	public static void main(String[] args) {
+		A("----");
+		B("****");
+	}
+	
+	public void A(delimeter) {
+		System.out.println(delimeter);
+		System.out.println("A");
+		System.out.println("A");
+	}
+	
+	public static void B(String delimeter) {
+		System.out.println(delimeter);
+		System.out.println("B");
+		System.out.println("B");
+	}
+
+}

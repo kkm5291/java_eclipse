@@ -1,0 +1,13 @@
+package BaekJoon;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+    	Byte A = 0;
+    	Byte B = 0;
+        Scanner sc = new Scanner(System.in);
+        A = sc.nextByte();
+        B = sc.nextByte();
+        
+        System.out.print(A+B);
+    }
+}

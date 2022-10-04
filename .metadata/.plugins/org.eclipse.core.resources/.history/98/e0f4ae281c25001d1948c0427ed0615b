@@ -1,0 +1,74 @@
+package d.collection;
+import java.util.ArrayList;
+
+public class ListSample {
+	public static void main(String[] args) {
+		ListSample sample = new ListSample();
+		sample.checkArrayList6();
+	}
+	
+	public void checkArrayList2() {
+		ArrayList<String> list2 = new ArrayList();
+		list2.add("A");
+		list2.add("B");
+		list2.add("C");
+		list2.add("D");
+		list2.add("E");
+		list2.add(1, "A1");
+		
+		for(String tempData:list2) {
+			System.out.println(tempData);
+		}
+//		ArrayList<String> list = new ArrayList<>();
+//		list.add("0");
+//		list.addAll(list2);
+//		for(String tempData2:list) {
+//			System.out.println("List : " + tempData2);
+//		}
+		
+		ArrayList<String> list = new ArrayList<>(list2);
+		
+	}
+	
+	public void checkArrayList4() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		
+		ArrayList<String> list2 = list;
+		list.add("Oops");
+		for(String tempData:list2) {
+			System.out.println("List2 " + tempData);
+		}
+	}
+	
+	public void checkArrayList5() {
+		ArrayList<String> list = new ArrayList<>();
+		list.add("A");
+		list.add("B");
+		int listSize = list.size();
+		for(int loop=0; loop<listSize;loop++) {
+			System.out.println("list.get("+loop+")="+list.get(loop));
+		}
+	}
+	
+	public void checkArrayList6() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("A");
+		String[] strList=list.toArray(new String[5]);
+		for(String temp:strList) {
+			System.out.println(temp);
+		}
+	}
+	
+	public void checkArrayList7() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		String[] tempArray = new String[0];
+		String[] strList = list.toArray(tempArray);
+		for(String temp:strList) {
+			System.out.println(temp);
+		}
+	}
+}

@@ -1,0 +1,31 @@
+package d.collection;
+import java.util.ArrayList;
+
+public class ListSample {
+	public static void main(String[] args) {
+		ListSample sample = new ListSample();
+		sample.checkArrayList2();
+	}
+	
+	public void checkArrayList2() {
+		ArrayList<String> list2 = new ArrayList();
+		list2.add("A");
+		list2.add("B");
+		list2.add("C");
+		list2.add("D");
+		list2.add("E");
+		list2.add(1, "A1");
+		
+		for(String tempData:list2) {
+			System.out.println(tempData);
+		}
+		ArrayList<String> list = new ArrayList<>();
+		list.add("0");
+		list.addAll(list2);
+		for(String tempData2:list) {
+			System.out.println("List : " + tempData2);
+		}
+		
+		
+	}
+}

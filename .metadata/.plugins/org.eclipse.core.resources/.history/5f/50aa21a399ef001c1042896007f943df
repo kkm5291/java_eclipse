@@ -1,0 +1,28 @@
+
+public class Car {
+	
+	String name;
+//	Wheel w;
+	
+	public Car(String name, Wheel w) {
+		super();
+		this.name = name;
+//		this.w = w;
+	}
+
+
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Car(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+	
+	
+
+}

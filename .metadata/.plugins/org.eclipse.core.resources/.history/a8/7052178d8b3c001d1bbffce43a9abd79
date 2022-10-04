@@ -1,0 +1,18 @@
+package c.string.practice;
+
+public class UseStringMethods {
+
+	public static void main(String[] args) {
+		String sample = "The String class represents character strings.";
+		UseStringMethods method = new UseStringMethods();
+		method.printWords(sample);
+		
+	}
+	
+	public void printWords(String str) {
+		String[] splitArray = str.split(" ");
+		for(String data:splitArray) {
+			System.out.println(data);
+		}
+	}
+}

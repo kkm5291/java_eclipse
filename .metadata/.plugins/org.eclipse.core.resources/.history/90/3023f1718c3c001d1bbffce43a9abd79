@@ -1,0 +1,28 @@
+package c.string.practice;
+
+public class UseStringMethods {
+
+	public static void main(String[] args) {
+		String sample = "The String class represents character strings.";
+		UseStringMethods method = new UseStringMethods();
+		method.findAnyCaseString(sample, "string");
+		
+	}
+	
+	public void printWords(String str) {
+		String[] splitArray = str.split(" ");
+		for(String data:splitArray) {
+			System.out.println(data);
+		}
+	}
+	
+	public void findString(String str, String findStr) {
+		System.out.println(str.indexOf(findStr));
+	}
+	
+	public void findAnyCaseString(String str, String findStr) {
+		String lowerSample = str.toLowerCase();
+		String lowerFindStr = findStr.toLowerCase();
+		int indx = lowerSample.indexOf(lowerFindStr);
+	}
+}

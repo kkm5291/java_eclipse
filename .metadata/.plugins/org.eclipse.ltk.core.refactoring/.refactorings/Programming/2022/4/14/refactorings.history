@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;OkjavaGoinHome.java&apos; to &apos;OkjavaGoinHome.java&apos;&#x0D;&#x0A;- Original project: &apos;Programming&apos;&#x0D;&#x0A;- Destination element: &apos;OkjavaGoinHome.java&apos;&#x0D;&#x0A;- Original element: &apos;OkjavaGoinHome.java&apos;" description="Copy file" element1="OkjavaGoinHome.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1648783402567" target="/Programming/OkjavaGoinHome.java" units="0" version="1.0"/>
+</session>

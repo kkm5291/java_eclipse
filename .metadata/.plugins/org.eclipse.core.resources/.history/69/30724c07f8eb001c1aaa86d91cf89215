@@ -1,0 +1,21 @@
+
+public class Practice {
+
+	public static void main(String[] args) {
+		A();
+		B();
+	}
+	
+	public static void A() {
+		System.out.println("----");
+		System.out.println("A");
+		System.out.println("A");
+	}
+	
+	public static void B() {
+		System.out.println("----");
+		System.out.println("B");
+		System.out.println("B");
+	}
+
+}

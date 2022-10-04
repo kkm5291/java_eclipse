@@ -1,0 +1,44 @@
+package Chapter8;
+import java.io.*;
+import java.util.*;
+public class practice_10 {
+	public static void main(String[] args) {
+		FileReader fin = null;
+		HashMap<String, String> hm = new HashMap<String, String>();
+		Scanner sc;
+		try {
+			fin = new FileReader("C:\\Temp\\phone.txt");
+			sc = new Scanner(fin);
+			while(sc.hasNext()) {
+				String n = sc.next(); // key
+				String p = sc.next(); // value
+				hm.put(n, p);
+			}
+			System.out.println("총 " + hm.size() + "개의 전화번호를 읽었습니다.");
+			sc.close();
+			
+			sc = new Scanner(System.in);
+			while(true) {
+				System.out.print("이름 >> ");
+				String input = sc.next();
+				
+				if(input.equals("그만")) {
+					break;
+				}
+				
+				String tel = hm.get(input);
+				
+				if(tel == null) {
+					System.out.println("찾는 이름이 없습니다.");
+				} else {
+					System.out.println(tel);
+				}
+				
+				
+			}
+			
+		} catch(IOException e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+	}
+}

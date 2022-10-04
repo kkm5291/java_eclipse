@@ -1,0 +1,24 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a=1;
+		Car c=new Car("자동차"); // c에는 주소값
+		
+		System.out.println(a); //1 pass by val
+		System.out.println(c); // Car@7a81197d pass by reference
+		System.out.println(c.name); // 자동차
+	}
+	
+	
+	public void print(int x, Car y) {
+		
+		
+		System.out.println("print x : " + x );
+		System.out.println("print car :"+ y);
+	}
+	
+
+}

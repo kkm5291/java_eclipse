@@ -1,0 +1,44 @@
+package Chapter8;
+import java.io.*;
+import java.util.*;
+public class practice_5 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		FileInputStream f1_file = null;
+		FileInputStream f2_file = null;
+		
+		
+		
+		/* 일단 파일 입력을 받아야함*/
+		System.out.println("전체 경로명이 아닌 파일 이름만 입력하는 경우, 파일을 프로젝트 폴더에 있어야 합니다");
+		
+		System.out.print("첫번째 파일 이름(경로)을 입력하세요 >> ");
+		String f1 = sc.nextLine();
+		
+		System.out.print("두번째 파일 이름(경로)을 입력하세요 >>");
+		String f2 = sc.nextLine();
+		
+		System.out.println(f1 + "와 " + f2 + "를 비교합니다.");
+		
+		
+		try {
+			f1_file = new FileInputStream(f1); // 바이너리 파일 읽기
+			f2_file = new FileInputStream(f2); // 바이너리 파일 읽기
+			
+			byte [] b1 = new byte[f1.length()];
+			byte [] b2 = new byte[f2.length()];
+			
+			f1_file.read(b1);
+			f2_file.read(b2);
+			
+			if(Arrays.equals(b1, b2)) {
+				System.out.println("파일이 같습니다.");
+			} else {
+				System.out.println("파일이 같지 않습니다.");
+			}
+		} catch(IOException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+}

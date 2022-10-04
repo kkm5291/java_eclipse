@@ -1,0 +1,23 @@
+package Chapter8;
+import java.io.*;
+import java.util.*;
+public class practice_10 {
+	public static void main(String[] args) {
+		FileReader fin = null;
+		HashMap<String, String> hm = new HashMap<String, String>();
+		Scanner sc;
+		try {
+			fin = new FileReader("C:\\Temp\\phone.txt");
+			sc = new Scanner(fin);
+			int c;
+			while(sc.hasNext()) {
+				String n = sc.next(); // key
+				String p = sc.next(); // value
+				hm.put(n, p);
+				System.out.println(n + " " + hm.get(n));
+			}
+		} catch(IOException e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+	}
+}

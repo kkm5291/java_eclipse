@@ -1,0 +1,10 @@
+1653373116867	Copy compilation unit
+1653373209634	Extract method 'getVAT'
+1653373471069	Convert local variable 'vatRate' to field
+1653373586034	Extract method 'getTotal'
+1653373765438	Extract method 'getExpense'
+1653373788225	Convert local variable 'expenseRate' to field
+1653373806134	Extract method 'getIncome'
+1653373882975	Extract method 'getDividend'
+1653373965148	Extract method 'print'
+1653374306054	Copy compilation unit
